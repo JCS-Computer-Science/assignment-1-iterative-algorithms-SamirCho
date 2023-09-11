@@ -6,8 +6,10 @@ function selectionSort(array) {
 	 ** for the smallest, then swap it with the second element.
 	 ** Continue like this until you have only one element left.
 	 */
-
-	return array;
+	const count = array.length
+	for (let i = 0; i < count; i++) {
+		
+	}
 }
 
 module.exports = selectionSort;
