@@ -6,10 +6,24 @@ function selectionSort(array) {
 	 ** for the smallest, then swap it with the second element.
 	 ** Continue like this until you have only one element left.
 	 */
-	const count = array.length
+	let tempArray=[]
+	const count=array.length
 	for (let i = 0; i < count; i++) {
-		
+		tempArray[i]=findSmallest(array).value
+		array.splice(findSmallest(array).index,1)
 	}
+	return tempArray
+}
+
+function findSmallest(array){
+	let smallest={value:array[0],index:0}
+	for (let i = 0; i < array.length; i++) {
+		if(smallest.value>array[i]){
+			smallest.value=array[i]
+			smallest.index=i
+		}
+	}
+	return smallest
 }
 
 module.exports = selectionSort;
