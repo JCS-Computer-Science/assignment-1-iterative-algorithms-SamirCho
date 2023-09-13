@@ -7,8 +7,18 @@ function binarySearch(array, searchTerm) {
 	 ** repeat the above process for the subset of the array
 	 ** keep repeating with smaller and smaller subsets until you find the searchTerm
 	 */
+	let checked=array.length
+	if(array[parseInt(array.length/2)]==searchTerm){
+		return parseInt(array.length/2)
+	}
 
-	return null;
+	if(array[parseInt((array.length)/2)]>searchTerm){
+		
+	}else{
+		
+	}
+	console.log(array)
 }
 
+binarySearch([0,1,2,3,4,5,6,7,8,9],3)
 module.exports = binarySearch;
