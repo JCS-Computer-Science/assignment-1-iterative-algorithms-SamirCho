@@ -11,12 +11,10 @@ function insertionSort(array) {
 				let temp=array[i]
 				array[i]=array[a]
 				array[a]=temp
-				break
 			}
 		}
 	}
-	console.log(array)
 	return array;
 }
-insertionSort([5,3,445,1])
+
 module.exports = insertionSort;

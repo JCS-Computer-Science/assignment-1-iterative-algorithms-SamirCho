@@ -33,5 +33,4 @@ function checkIfSorted(sorted){
     return inOrder
 }
 
-console.log(bubbleSort([14,56,-1,0,24,456,67,768,7,8,6,76,76,6,5,67,65,5,6,56,7,5,67,56,2]))
 module.exports = bubbleSort;

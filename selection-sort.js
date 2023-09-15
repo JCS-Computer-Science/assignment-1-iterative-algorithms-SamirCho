@@ -37,4 +37,3 @@ function linearSearch(array,searchTerm) {
 }
 
 module.exports = selectionSort;
-console.log()
