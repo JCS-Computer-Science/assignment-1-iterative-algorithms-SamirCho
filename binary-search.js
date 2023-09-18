@@ -9,8 +9,18 @@ function binarySearch(array, searchTerm) {
 	 */
 	let start=0
 	let end=array.length-1
-	let mid=parseInt((start+end)/2)
+	while(parseInt(start-end)!=1){
+		let mid=parseInt((start+end)/2)
+		if(array[mid]==searchTerm){
+			return mid
+		}
+		if(array[mid]>searchTerm){
+			end=mid
+		}else{
+			start=mid
+		}
+	}
+	return mid
 }
 
-binarySearch([0,1,2,3,4,5,6,7,8,9],3)
 module.exports = binarySearch;
