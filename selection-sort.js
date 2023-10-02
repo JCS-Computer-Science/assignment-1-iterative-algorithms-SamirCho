@@ -7,9 +7,7 @@ function selectionSort(array) {
 				smallest.index=a
 			}
 		}
-		let temp=array[i]
-		array[i]=array[smallest.index]
-		array[smallest.index]=temp
+	[array[i],array[smallest.index]]=[array[smallest.index],array[i]]
 	}
 	return array
 }

@@ -1,12 +1,12 @@
 function bubbleSort(array) {
    let isSorted=checkIfSorted(array)
-   while(!isSorted){
-    for (let i = 0; i < array.length; i++) {
-        if(array[i]>array[i+1]){
-            let temp=array[i]
-            array[i]=array[i+1]
-            array[i+1]=temp
-        }
+    while(!isSorted){
+        for (let i = 0; i < array.length; i++) {
+            if(array[i]>array[i+1]){
+                let temp=array[i]
+                array[i]=array[i+1]
+                array[i+1]=temp
+            }
     }
     isSorted=checkIfSorted(array)
 }
